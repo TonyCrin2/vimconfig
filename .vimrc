@@ -18,16 +18,18 @@ nnoremap <F12> :setlocal spell! spelllang=en_gb<CR>
 
 set background=dark
 let g:solarized_italics=0
-colo Solarized8
+colo solarized8
 set termguicolors
 nnoremap <F6> :let &bg=(&bg=='light'?'dark':'light')<CR>
 "autocmd OptionSet background
-    \ execute 'source' globpath(&rtp, 'autoload/lightline/colorscheme/solarized.vim')
+    \ execute 'source' globpath(&rtp,
+    \ 'autoload/lightline/colorscheme/solarized.vim')
     \ | call lightline#colorscheme() | call lightline#update()
 
 nnoremap <silent> <F7> :execute "set colorcolumn="
     \ . (&colorcolumn == "" ? "80" : "")<CR>
 
+set virtualedit=all
 set nocursorline
 set nocursorcolumn
 set ttyfast                     " Faster term redrawing, scrolling; perhaps
@@ -100,9 +102,9 @@ Plug 'Raimondi/delimitMate'
 
 Plug 'lifepillar/vim-solarized8'
 
-Plug 'mhinz/vim-startify'
+Plug 'TonyCrin2/vim-startify'
 
-Plug 'TonyCrin/lightline.vim'        
+Plug 'TonyCrin2/lightline.vim'        
 
 Plug 'mbbill/undotree'
 
@@ -111,6 +113,8 @@ Plug 'TonyCrin2/syntastic'
 Plug 'junegunn/goyo.vim'
 
 Plug 'pgdouyon/vim-yin-yang'
+
+Plug 'sainnhe/everforest'
 
 call plug#end()
 
