@@ -114,8 +114,6 @@ Plug 'junegunn/goyo.vim'
 
 Plug 'pgdouyon/vim-yin-yang'
 
-Plug 'sainnhe/everforest'
-
 call plug#end()
 
 set noshowmode
@@ -154,3 +152,4 @@ nnoremap <F5> :UndotreeToggle<CR>
 "let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
+
